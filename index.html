@@ -62,16 +62,24 @@
         }
 
         .gif-container img {
+            size: 200%;
             max-width: 100%;
             height: auto;
         }
     </style>
 </head>
 <body>
- <div class="container">
+    <div class="container">
         <div class="gif-container">
             <img src="Sequence 01.gif" alt="Your GIF">
         </div>
     </div>
+
+    <script>
+        // Replace all HTTP references with HTTPS
+        document.querySelectorAll("img[src^='http://']").forEach(function(img) {
+            img.src = img.src.replace(/^http:\/\//, 'https://');
+        });
+    </script>
 </body>
 </html>
