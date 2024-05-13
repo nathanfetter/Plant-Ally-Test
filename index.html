@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta http-equiv='cache-control' content='no-cache'> 
-<meta http-equiv='expires' content='0'> 
-<meta http-equiv='pragma' content='no-cache'>
+    <meta http-equiv='expires' content='0'> 
+    <meta http-equiv='pragma' content='no-cache'>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Plant Ally Website</title>
@@ -61,13 +61,20 @@
         
         .gif-container {
             text-align: center;
-            margin-top: 100px;
+            margin-top: 10%; /* Adjust the percentage for different devices */
         }
 
         .gif-container img {
             size: 200%;
             max-width: 100%;
             height: auto;
+        }
+
+        /* Media query for smartphones */
+        @media only screen and (max-width: 600px) {
+            .gif-container {
+                margin-top: 20%; /* Adjust the percentage for different devices */
+            }
         }
     </style>
 </head>
